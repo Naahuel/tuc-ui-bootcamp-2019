@@ -2,7 +2,7 @@
   "name": "tuc-ui-bootcamp-2019",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application.",
+  "description": "2019 Globant UI Bootcamp Demo App",
   "main": "./server.js",
   "scripts": {
     "setup": "cd admin && npm run setup",

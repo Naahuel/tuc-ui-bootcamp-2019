@@ -1,3 +1,1 @@
-# tuc-ui-bootcamp-2019
-
-A quick description of tuc-ui-bootcamp-2019.
+# 2019 Globant UI Bootcamp Demo App
