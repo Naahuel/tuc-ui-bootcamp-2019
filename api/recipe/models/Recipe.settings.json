@@ -32,6 +32,17 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "required": true,
+      "min": 1,
+      "default": "1"
+    },
+    "prep_time": {
+      "required": true,
+      "type": "string"
     }
   }
 }
