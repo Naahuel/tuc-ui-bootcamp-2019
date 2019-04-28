@@ -1,4 +1,5 @@
 {
+  "name": "tuc-ui-bootcamp-2019",
   "env": {
     "NODE_ENV": "production"
   }
