@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "gallery",
+  "info": {
+    "name": "gallery",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

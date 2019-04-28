@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chefs",
+      "handler": "Chef.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chefs/count",
+      "handler": "Chef.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chefs/:_id",
+      "handler": "Chef.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chefs",
+      "handler": "Chef.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chefs/:_id",
+      "handler": "Chef.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chefs/:_id",
+      "handler": "Chef.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

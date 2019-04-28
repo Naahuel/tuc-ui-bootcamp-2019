@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "chef",
+  "info": {
+    "name": "chef",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "full_name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "recipes": {
+      "collection": "recipe",
+      "via": "chef"
+    }
+  }
+}

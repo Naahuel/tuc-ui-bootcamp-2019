@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "ingredient",
+  "info": {
+    "name": "ingredient",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "calories": {
+      "type": "string"
+    },
+    "nutritional_value": {
+      "type": "string"
+    },
+    "recipe": {
+      "model": "recipe",
+      "via": "ingredients_used"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

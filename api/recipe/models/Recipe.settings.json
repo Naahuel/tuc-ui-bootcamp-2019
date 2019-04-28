@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "recipe",
+  "info": {
+    "name": "recipe",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "instructions": {
+      "required": true,
+      "type": "text"
+    },
+    "chef": {
+      "model": "chef",
+      "via": "recipes"
+    },
+    "ingredients_used": {
+      "collection": "ingredient",
+      "via": "recipe"
+    },
+    "gallery": {
+      "model": "gallery"
+    },
+    "main_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
