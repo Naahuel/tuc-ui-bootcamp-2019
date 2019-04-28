@@ -20,6 +20,11 @@
     "recipes": {
       "collection": "recipe",
       "via": "chef"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
