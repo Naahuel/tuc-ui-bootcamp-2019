@@ -19,9 +19,10 @@
     "nutritional_value": {
       "type": "string"
     },
-    "recipe": {
-      "model": "recipe",
-      "via": "ingredients_used"
+    "recipes": {
+      "collection": "recipe",
+      "via": "ingredients",
+      "dominant": true
     },
     "image": {
       "model": "file",

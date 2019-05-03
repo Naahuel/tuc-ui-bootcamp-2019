@@ -21,10 +21,6 @@
       "model": "chef",
       "via": "recipes"
     },
-    "ingredients_used": {
-      "collection": "ingredient",
-      "via": "recipe"
-    },
     "gallery": {
       "model": "gallery"
     },
@@ -43,6 +39,10 @@
     "prep_time": {
       "required": true,
       "type": "string"
+    },
+    "ingredients": {
+      "collection": "ingredient",
+      "via": "recipes"
     }
   }
 }
